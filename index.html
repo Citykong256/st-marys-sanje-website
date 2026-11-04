@@ -7,105 +7,155 @@
 <title>St. Mary's Secondary School Sanje</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#222}
-header{background:#063b28;color:white;text-align:center;padding:25px 12px}
-header h1{margin:8px 0;font-size:25px}
-header p{margin:5px}
-nav{background:#092c20;padding:13px;text-align:center;position:sticky;top:0}
-nav a{color:white;text-decoration:none;margin:7px;font-size:13px}
-.hero{background:#0b6544;color:white;text-align:center;padding:55px 15px}
-.hero h2{font-size:28px}
-section{background:white;margin:15px;padding:20px;border-radius:9px}
-h2{color:#075b3d}
-.card{background:#eef5f0;padding:15px;border-radius:8px;margin:10px 0}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f7f4;color:#26352d}
+header{background:#06452e;color:white;text-align:center;padding:25px 12px}
+.logo{width:100px;height:100px;border-radius:50%;background:white;object-fit:contain;padding:5px}
+header h1{font-size:24px;margin:12px 0}
+header p{margin:6px}
+nav{background:#082e20;text-align:center;padding:12px 5px;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;display:inline-block;padding:9px 8px;font-size:14px}
+nav a:hover{background:#168456;border-radius:5px}
+.hero{background:linear-gradient(135deg,#075238,#168456);color:white;text-align:center;padding:75px 18px}
+.hero h2{font-size:30px;color:white}
+.hero p{font-size:18px;line-height:1.6}
+.btn{display:inline-block;background:#f3c64e;color:#173d2c;padding:13px 19px;border-radius:7px;text-decoration:none;font-weight:bold;margin:7px}
+section{background:white;margin:18px 12px;padding:24px;border-radius:12px;box-shadow:0 2px 9px #00000012}
+h2{color:#075238}
+.card{background:#edf5ef;padding:16px;border-radius:9px;margin:12px 0}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{background:#e7eee8;min-height:145px;border-radius:9px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:#075238;font-weight:bold}
+.photo img{width:100%;height:145px;object-fit:cover;border-radius:9px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-td,th{border:1px solid #ccc;padding:9px;text-align:center}
-th{background:#075b3d;color:white}
-button{background:#075b3d;color:white;padding:12px 20px;border:0;border-radius:6px}
-footer{background:#092c20;color:white;text-align:center;padding:25px}
-a{color:#075b3d}
-footer a{color:white}
+th,td{border:1px solid #ccc;padding:11px;text-align:center}
+th{background:#075238;color:white}
+.contact{text-align:center}
+.contact a{color:#075238;font-weight:bold}
+footer{background:#082e20;color:white;text-align:center;padding:25px}
+footer p{margin:7px}
+.note{font-size:13px;color:#666}
+@media(max-width:400px){header h1{font-size:20px}.hero h2{font-size:24px}nav a{font-size:12px;padding:7px 5px}}
 </style>
 </head>
 <body>
 
 <header>
+<div style="position:relative;display:inline-block;background:white;border-radius:50%;padding:3px">
+<span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#075238;font-size:30px;font-weight:bold">SM</span>
+<img class="logo" src="school-logo.png" alt="School logo" onerror="this.style.display='none'">
+</div>
 <h1>ST. MARY'S SECONDARY SCHOOL SANJE</h1>
+<p><b>HE WHO STRUGGLES WINS</b></p>
 <p>Education for Excellence</p>
-<p>Welcome to our official school website</p>
+<p>Official School Website</p>
 </header>
 
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#academics">Academics</a>
+<a href="#uniform">Uniform</a>
 <a href="#timetable">Timetable</a>
+<a href="#gallery">Gallery</a>
 <a href="#news">News</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero" id="home">
-<h2>Welcome to St. Mary's Secondary School Sanje</h2>
+<h2>WELCOME TO ST. MARY'S SECONDARY SCHOOL SANJE</h2>
 <p>Building Knowledge, Character and a Brighter Future.</p>
-<a href="#about"><button>Explore Our School</button></a>
+<p>He who struggles wins!</p>
+<a class="btn" href="#about">Explore Our School</a>
 </div>
 
 <section id="about">
 <h2>About Our School</h2>
-<p>St. Mary's Secondary School Sanje is committed to providing quality education, developing discipline and nurturing responsible future leaders.</p>
-<p>Our aim is to promote academic excellence, good character and holistic development.</p>
+<p>Welcome to St. Mary's Secondary School Sanje, located in Sanje, Kyotera, Uganda.</p>
+<p>We are committed to quality education, discipline, moral values and the development of responsible future leaders.</p>
+<p>Our motto is <b>He Who Struggles Wins.</b></p>
 </section>
 
 <section id="academics">
 <h2>Academics</h2>
 <div class="card">
-<h3>Our Academic Programmes</h3>
-<p>We provide secondary education and encourage students to achieve their academic potential.</p>
+<h3>Quality Education</h3>
+<p>We promote effective teaching, learning, hard work and academic excellence.</p>
 </div>
 <div class="card">
-<h3>Teaching and Learning</h3>
-<p>We promote effective teaching, hard work, discipline and academic achievement.</p>
+<h3>Student Development</h3>
+<p>We encourage students to develop their talents, knowledge, discipline and skills.</p>
 </div>
+</section>
+
+<section id="uniform">
+<h2>Our School Uniform</h2>
+<div class="gallery">
+<div class="photo"><img src="boys-uniform.jpg" alt="Boys uniform" onerror="this.style.display='none'"><span>Boys' Uniform</span></div>
+<div class="photo"><img src="girls-uniform.jpg" alt="Girls uniform" onerror="this.style.display='none'"><span>Girls' Uniform</span></div>
+</div>
+<p class="note">Official uniform photographs will be displayed here.</p>
 </section>
 
 <section id="timetable">
 <h2>School Timetable</h2>
-<p>Students can check their daily lessons here. Official timetable updates will be posted by the school.</p>
 <table>
 <tr><th>Time</th><th>Activity</th></tr>
-<tr><td>7:00 – 8:00</td><td>Morning preparation</td></tr>
-<tr><td>8:00 – 10:00</td><td>Lessons</td></tr>
-<tr><td>10:00 – 10:30</td><td>Break</td></tr>
-<tr><td>10:30 – 1:00</td><td>Lessons</td></tr>
-<tr><td>1:00 – 2:00</td><td>Lunch</td></tr>
-<tr><td>2:00 – 4:00</td><td>Lessons</td></tr>
+<tr><td>7:00–8:00</td><td>Morning preparation</td></tr>
+<tr><td>8:00–10:00</td><td>Lessons</td></tr>
+<tr><td>10:00–10:30</td><td>Break</td></tr>
+<tr><td>10:30–1:00</td><td>Lessons</td></tr>
+<tr><td>1:00–2:00</td><td>Lunch</td></tr>
+<tr><td>2:00–4:00</td><td>Lessons</td></tr>
 </table>
-<p><em>Note: This is a sample timetable, not the confirmed school timetable.</em></p>
+<p class="note">Sample timetable only. Official school timetable to be added.</p>
+</section>
+
+<section id="gallery">
+<h2>School Gallery</h2>
+<div class="gallery">
+<div class="photo"><img src="school-photo1.jpg" alt="School building" onerror="this.style.display='none'"><span>School Building</span></div>
+<div class="photo"><img src="school-photo2.jpg" alt="Students" onerror="this.style.display='none'"><span>Our Students</span></div>
+<div class="photo"><img src="school-photo3.jpg" alt="School activities" onerror="this.style.display='none'"><span>School Activities</span></div>
+<div class="photo"><img src="school-photo4.jpg" alt="School compound" onerror="this.style.display='none'"><span>School Compound</span></div>
+</div>
+<p class="note">Actual school photographs will be uploaded here.</p>
 </section>
 
 <section id="news">
 <h2>News and Announcements</h2>
 <div class="card">
-<h3>Welcome to our school website!</h3>
-<p>Stay connected for school news, events and important announcements.</p>
+<h3>Welcome to our official website!</h3>
+<p>Welcome to the official online platform of St. Mary's Secondary School Sanje.</p>
 </div>
-<p>New announcements can be added by editing this website's index.html file on GitHub.</p>
+<div class="card">
+<h3>School Announcements</h3>
+<p>Important school news, events and announcements will appear here.</p>
+</div>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
+<section id="contact" class="contact">
+<h2>Contact Our School</h2>
 <p>St. Mary's Secondary School Sanje</p>
-<p>Phone: <a href="tel:0765840578">0765840578</a></p>
-<p>Call the school directly using the number above.</p>
-<p>For enquiries, please contact the school administration.</p>
+<p>Location: Sanje, Kyotera, Uganda</p>
+<div class="card">
+<p><b>Telephone / WhatsApp</b></p>
+<p><a href="tel:+256748098496">+256 748 098 496</a></p>
+<a class="btn" href="https://wa.me/256748098496">WhatsApp Us</a>
+<a class="btn" href="tel:+256748098496">Call Us</a>
+</div>
+<div class="card">
+<p><b>Second Telephone Number</b></p>
+<p><a href="tel:+256765840578">0765 840 578</a></p>
+<a class="btn" href="tel:+256765840578">Call Second Number</a>
+</div>
 </section>
 
 <footer>
-<h3>St. Mary's Secondary School Sanje</h3>
+<h3>ST. MARY'S SECONDARY SCHOOL SANJE</h3>
+<p>HE WHO STRUGGLES WINS</p>
 <p>Education for Excellence</p>
 <p>© 2026 St. Mary's Secondary School Sanje</p>
 </footer>
 
 </body>
 </html>
-￼Enter
